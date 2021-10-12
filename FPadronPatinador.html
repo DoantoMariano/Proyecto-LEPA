@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos CSS del fondo de los formularios -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="CSS/EstiloFadeIn.css">
+    <link rel="stylesheet" href="CSS/EstiloFondoFormularios.css">
+    <!--Estilo de los inputs del formulario-->
+    <link rel="stylesheet" href="CSS/EstiloPadrones.css">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <!--Script para que fincionen los iconos de la pagina FONTAWESOME-->
+    <script src="https://kit.fontawesome.com/b74c22d92d.js" crossorigin="anonymous"></script>
+
+    <title>LEPA</title>
+
+</head>
+
+<body>
+    <!-- inserta la barra de menu -->
+    <div id="menu_top"></div>
+
+    <!-- Fondo de pantalla -->
+    <div class="fondo_pantalla">
+        <img src="assets/lepa.png" alt="lepa">
+        <h1>Liga de Entrenadores y Patinadores Artisticos</h1>
+    </div>
+
+    <div class="container">
+        <div class="form_top">
+            <h2><i class="far fa-user"></i> Registro Patinadoras/es</h2>
+        </div>
+        <form class="form_reg">
+            <div class="f_registro cont_patinadores">
+                <h3>Datos del Patinadora/dor</h3>
+                <input class="input_nombre" type="text" placeholder="&#10095;Nombres" required autofocus>
+                <input class="input_apellido" type="text" placeholder="&#10095;Apellidos" required>
+                <input class="input_dni" type="number" placeholder="&#10095;DNI" required>
+                <br>
+                <label class="fecha_nacimiento">Fecha Nacimiento:<input class="input" type="date" required></label>
+                <input class="input_domicilio" type="text" placeholder="&#10095;Domicilio" required>
+                <input class="input_localidad" type="text" placeholder="&#10095;Localidad" required>
+                <input class="input_partido" type="text" placeholder="&#10095;Partido" required>
+                <input class="input_institucion" type="text" placeholder="&#10095;Institución a la que pertenece" required>
+                <br>
+                <input class="input_telefono" type="tel" placeholder="&#128382;telefono" required>
+                <input class="input_celular" type="tel" placeholder="&#128385;celular" required>
+                <input class="input_email" type="email" placeholder="&#x0040;email" required>
+                <br>
+
+                <div class="sexo_select"><b>Sexo:</b>
+                    <label class="masculino">Masculino
+                        <input type="radio" name="Genero" value="M">
+                    </label>
+                    <label class="femenino">Femenino
+                        <input type="radio" name="Genero" value="F">
+                    </label>
+                    <label class="otro">No binario
+                        <input type="radio" name="Genero" value="X">
+                    </label>
+                </div>
+            </div>
+
+            <div class="contenedor_padres">
+                <div class="datos_padre">
+                    <div><b>Datos del padre/tutor</b></div>
+                    <input class="input_nombre" type="text" placeholder="&#10095;Nombres" required>
+                    <input class="input_apellido" type="text" placeholder="&#10095;Apellidos" required>
+                    <input class="input_dni" type="number" placeholder="&#10095;DNI" required>
+                </div>
+
+                <div class="datos_madre">
+                    <div><b>Datos de la madre/tutora</b></div>
+                    <input class="input_nombre" type="text" placeholder="&#10095;Nombres" required>
+                    <input class="input_apellido" type="text" placeholder="&#10095;Apellidos" required>
+                    <input class="input_dni" type="number" placeholder="&#10095;DNI" required>
+                </div>
+            </div>
+            <div class="contenedor_botones">
+                <a href="MenuPadron.html" class="salir"><img src="assets/exit.png" class="exit" alt="exit"></a>
+                <input type="reset" class="icon borra" id="cancelar" value="Borrar">
+                <input type="submit" class="icon graba" id="grabar" value="Grabar">
+            </div>
+        </form>
+    </div>
+</body>
+
+<!-- Script que insera el menu -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/menu_top.js"></script>
+
+</html>

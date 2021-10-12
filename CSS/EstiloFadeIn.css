@@ -1,0 +1,53 @@
+ /* Fade in del container */
+ 
+ .container {
+     -webkit-animation: container 1.5s both;
+     -moz-animation: container 1.5s both;
+     -o-animation: container 1.5s both;
+     animation: container 1.5s both;
+ }
+ 
+ @-webkit-keyframes container {
+     0% {
+         opacity: 0;
+         -webkit-transform: translateZ(-50px);
+     }
+     100% {
+         opacity: 1;
+         -webkit-transform: translateZ(0px);
+     }
+ }
+ 
+ @-moz-keyframes container {
+     0% {
+         opacity: 0;
+         -webkit-transform: translateZ(-50px);
+     }
+     100% {
+         opacity: 1;
+         -webkit-transform: translateZ(0px);
+     }
+ }
+ 
+ @-o-keyframes container {
+     0% {
+         opacity: 0;
+         -webkit-transform: translateZ(-50px);
+     }
+     100% {
+         opacity: 1;
+         -webkit-transform: translateZ(0px);
+     }
+ }
+ 
+ @keyframes container {
+     0% {
+         opacity: 0;
+         -webkit-transform: translateZ(-50px);
+     }
+     100% {
+         opacity: 1;
+         -webkit-transform: translateZ(0px);
+     }
+ }
+ /*  */

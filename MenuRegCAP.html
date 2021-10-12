@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <!-- Estilos CSS para el menu del Menu PADRON -->
+    <link rel="stylesheet" href="css/EstiloFondo.css">
+    <link rel="stylesheet" href="css/EstiloContainer.css">
+    <link rel="stylesheet" href="CSS/EstiloFadeIn.css">
+    <link rel="stylesheet" href="css/MenuPadron.css">
+
+    <!-- <link rel="stylesheet" href="css/menu.css"> -->
+
+    <title>L.E.P.A.</title>
+</head>
+
+<body>
+    <!-- PAGINA DE INSCRIPCIÓN A PADRONES -->
+
+    <!-- inserta la barra de menu -->
+    <div id="menu_top"></div>
+
+
+    <!-- Fondo de pantalla -->
+    <div class="fondo_pantalla">
+        <img src="assets/lepa.png" alt="lepa">
+        <h2>Liga de Entrenadores y Patinadores Artisticos</h2>
+    </div>
+
+    <!-- Tarjetas de menu -->
+
+    <div class="menu padron">
+
+        <div class="container">
+            <div class="card">
+                <h2>CAP</h2>
+                <div class="content">
+                    <a href="https://static1.squarespace.com/static/5c520cf245776e4571a3bb6a/t/5e56d3a61dce0870d83a1646/1582748586480/LIBRE%2B2020.pdf" target="_blank">Reglamento Libre</a>
+                    <a href="https://static1.squarespace.com/static/5c520cf245776e4571a3bb6a/t/5ddeb684e6b0e7013a1c135f/1574876819629/FIGURAS+2020.pdf" target="_blank">Reglamento Escuela</a>
+                    <a href="https://static1.squarespace.com/static/5c520cf245776e4571a3bb6a/t/5ddeb6c936172f0b2f476084/1574876892878/PAREJAS+2020.pdf" target="_blank">Reglamento Parejas</a>
+                    <a href="https://static1.squarespace.com/static/5c520cf245776e4571a3bb6a/t/5e56d3c486208b151ba14e94/1582748617012/PRECISION%2B2020.pdf" target="_blank">Reglamento Precisión</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Efecto movimiento de las CARD -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+        <script>
+            VanillaTilt.init(document.querySelectorAll(".card"), {
+                max: 25,
+                speed: 400,
+                glare: true,
+                "max-glare": 1,
+            });
+        </script>
+
+        <!-- Script que insera el menu -->
+        <script src="js/menu_top.js"></script>
+
+</body>
+
+</html>

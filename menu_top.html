@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menu_top.css">
+    <link rel="stylesheet" href="css/normalize.csss">
+    <title></title>
+</head>
+
+<body>
+
+    <div class="menu_top">
+        <ul>
+            <li class="icon"><a href="Index.html"><b>Inicio</b></a></li>
+            <li class="icon"><a href="#"><b>Nosotros</b></a></li>
+            <li class="icon"><a href="#"><b>Contacto</b></a></li>
+        </ul>
+    </div>
+</body>
+<!-- Efecto movimiento de las CARD -->
+<script type="text/javascript" src="js/vanilla-tilt.js"></script>
+<script>
+    VanillaTilt.init(document.querySelectorAll(".icon"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 2,
+    });
+</script>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <!-- Estilos para el menu de Incripcion LEPA -->
+    <link rel="stylesheet" href="css/EstiloFondo.css">
+    <link rel="stylesheet" href="css/EstiloContainer.css">
+    <link rel="stylesheet" href="css/EstiloFadeIn.css">
+    <link rel="stylesheet" href="css/MenuPadron.css">
+
+
+
+    <title>L.E.P.A.</title>
+</head>
+
+<body>
+
+    <!-- PAGINA DE INSCRIPCION A TORNESO LEPA -->
+
+    <!-- inserta la barra de menu -->
+    <div id="menu_top"></div>
+
+
+    <!-- Fondo de pantalla -->
+    <div class="fondo_pantalla">
+        <img src="assets/lepa.png" alt="lepa">
+        <h2>Liga de Entrenadores y Patinadores Artisticos</h2>
+    </div>
+
+    <!-- Tarjetas de menu -->
+
+    <div class="menu inscripcion_lepa">
+
+        <div class="container">
+            <div class="card">
+                <h2>Torneos</h2>
+                <div class="content">
+                    <a href="#">Inscrioción RUD by LEPA</a>
+                    <a href="#">Inscripción Federados by LEPA</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Efecto movimiento de las CARD -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+        <script>
+            VanillaTilt.init(document.querySelectorAll(".card"), {
+                max: 25,
+                speed: 400,
+                glare: true,
+                "max-glare": 1,
+            });
+        </script>
+
+        <!-- Script que insera el menu -->
+        <script src="js/menu_top.js"></script>
+
+</body>
+
+</html>

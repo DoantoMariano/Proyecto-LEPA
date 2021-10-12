@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="CSS/EstiloFadeIn.css">
+    <link rel="stylesheet" href="CSS/EstiloFondoFormularios.css">
+    <!--Estilo del formulario-->
+    <link rel="stylesheet" href="css/EstiloPadrones.css">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <!--Script para que fincionen los iconos de la pagina FONTAWESOME-->
+    <script src="https://kit.fontawesome.com/b74c22d92d.js" crossorigin="anonymous"></script>
+
+    <title>LEPA</title>
+
+</head>
+
+<style>
+
+</style>
+
+<body>
+    <!-- inserta la barra de menu -->
+    <div id="menu_top"></div>
+
+    <!-- Fondo de pantalla -->
+    <div class="fondo_pantalla">
+        <img src="assets/lepa.png" alt="lepa">
+        <h1>Liga de Entrenadores y Patinadores Artisticos</h1>
+    </div>
+
+    <div class="container">
+        <div class="form_top">
+            <h2><i class="far fa-user"></i> Solicitud de Licencia</h2>
+        </div>
+
+        <img class="rio" src="assets/Rio.png" alt="rio">
+
+        <form class="form_reg">
+            <div class="f_registro">
+                <input class="input_dni" type="number" placeholder="&#10095;DNI" required autofocus>
+                <input class="input_nombre" type="text" placeholder="&#10095;Nombres" disabled>
+                <input class="input_apellido" type="text" placeholder="&#10095;Apellidos" disabled>
+                <br>
+                <label class="fecha_nacimiento">Fecha Nacimiento:<input class="fecha" type="date" disabled></label>
+                <input class="input_domicilio" type="text" placeholder="&#10095;Domicilio" disabled>
+                <br>
+                <input class="input_localidad" type="text" placeholder="&#10095;Localidad" disabled>
+                <input class="input_partido" type="text" placeholder="&#10095;Partido" disabled>
+                <input class="input_institucion" type="text" placeholder="&#10095;Institución a la que pertenece" disabled>
+                <br>
+                <input class="input_telefono" type="number" placeholder="&#128382;telefono" disabled>
+                <input class="input_celular" type="number" placeholder="&#128385;celular" disabled>
+                <input class="input_email" type="email" placeholder="&#x0040;email" disabled>
+                <br>
+
+                <div class="sexo_select"><b>Tipo de Licencia a solicitar:</b>
+                    <label class="masculino">NACIONAL
+                        <input type="radio" name="Genero" value="N">
+                    </label>
+                    <label class="femenino">PROMOCIONAL
+                        <input type="radio" name="Genero" value="P">
+                    </label>
+                    <label class="otro">PRE-FEDERATIVA
+                        <input type="radio" name="Genero" value="PF">
+                    </label>
+                </div>
+
+            </div>
+            <div class="contenedor_botones">
+                <a href="Index.html" class="salir"><img src="assets/exit.png" class="exit" alt="exit"></a>
+                <input type="reset" class="icon borra" id="reset" value="Borrar">
+                <input type="submit" class="icon graba" id="submit" value="Solicitar">
+            </div>
+        </form>
+
+    </div>
+
+
+</body>
+
+
+<!-- Script que insera el menu -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/menu_top.js"></script>
+
+</html>
